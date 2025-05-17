@@ -7,6 +7,7 @@ void main()
 {
 PORTA=TRISA=ANSEL=0x00;
 PORTB=TRISB=ANSELH=0x00;
+PORTE=TRISE=0x00;
 while(1)
 {
 PORTA=0xFF;
@@ -17,6 +18,9 @@ delay(50000);
 PORTB=0xFF;
 delay(50000);
 PORTB=0x00;
+delay(50000);
+
+PORTB=0xFF;
 delay(50000);
 }
 }
